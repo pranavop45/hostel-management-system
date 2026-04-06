@@ -2,9 +2,6 @@
 
 ### JavaFX Desktop Application (No Database Required)
 
-**Developed by Pranav Kadam**
-📧 [iampranavkadam@gmail.com](mailto:iampranavkadam@gmail.com)
-
 ---
 
 ## 🚀 Overview
