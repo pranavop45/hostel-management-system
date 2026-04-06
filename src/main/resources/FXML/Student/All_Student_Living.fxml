@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="800.0" prefWidth="1280.0"
+            xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Controllers.Student.All_Student_LivingController">
+   <children>
+
+      <!-- Background -->
+      <ImageView fitHeight="800.0" fitWidth="1280.0" pickOnBounds="true">
+         <image><Image url="@../../Images/2188.jpg" /></image>
+      </ImageView>
+
+      <!-- Top bar -->
+      <BorderPane prefHeight="35.0" prefWidth="1280.0" style="-fx-background-color: #212121;">
+         <center>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0"
+                  text="HOSTEL MANAGEMENT SYSTEM" BorderPane.alignment="CENTER">
+               <font><Font name="Segoe UI Semibold" size="14.0" /></font>
+            </Text>
+         </center>
+      </BorderPane>
+
+      <!-- Page title -->
+      <Label layoutX="490.0" layoutY="50.0" prefHeight="60.0" prefWidth="300.0"
+             text="LIVING-IN STUDENT DETAILS" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font><Font name="Segoe UI Bold" size="22.0" /></font>
+      </Label>
+
+      <!-- BACK button -->
+      <Button id="btn_back" fx:id="btn_back" layoutX="20.0" layoutY="55.0"
+              mnemonicParsing="false" onMouseClicked="#back_btn_clicked"
+              prefHeight="40.0" prefWidth="100.0"
+              stylesheets="@../Styles/MenuSec.css" text="BACK" textFill="WHITE">
+         <font><Font name="Segoe UI" size="17.0" /></font>
+         <cursor><Cursor fx:constant="HAND" /></cursor>
+      </Button>
+
+      <!-- Student table -->
+      <TableView fx:id="tableStudent" editable="true"
+                 layoutX="50.0" layoutY="130.0"
+                 prefHeight="570.0" prefWidth="1180.0">
+         <columns>
+            <TableColumn fx:id="col_id1"          prefWidth="40.0"  text="ID" />
+            <TableColumn fx:id="col_name1"         prefWidth="145.0" text="NAME" />
+            <TableColumn fx:id="col_prn_no1"       prefWidth="110.0" text="PRN NO" />
+            <TableColumn fx:id="col_email1"        prefWidth="170.0" text="EMAIL" />
+            <TableColumn fx:id="col_phonenumber1"  prefWidth="130.0" text="PHONE NUMBER" />
+            <TableColumn fx:id="col_address1"      prefWidth="110.0" text="ADDRESS" />
+            <TableColumn fx:id="col_g_name1"       prefWidth="110.0" text="GUARDIAN" />
+            <TableColumn fx:id="col_g_tel1"        prefWidth="110.0" text="G_TEL" />
+            <TableColumn fx:id="col_hostel_block1" prefWidth="100.0" text="BLOCK" />
+            <TableColumn fx:id="col_fees1"         prefWidth="90.0"  text="FEES (₹)" />
+         </columns>
+      </TableView>
+
+      <!-- DELETE STUDENT button — below the table -->
+      <Button fx:id="btn_delete_student"
+              layoutX="553.0" layoutY="718.0"
+              mnemonicParsing="false" onMouseClicked="#deleteStudentAction"
+              prefHeight="50.0" prefWidth="175.0"
+              style="-fx-background-color: #C0392B;"
+              stylesheets="@../Styles/MenuSec.css"
+              text="DELETE STUDENT" textFill="WHITE">
+         <font><Font name="Segoe UI Bold" size="15.0" /></font>
+         <cursor><Cursor fx:constant="HAND" /></cursor>
+      </Button>
+
+   </children>
+</AnchorPane>
