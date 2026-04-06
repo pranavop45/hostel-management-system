@@ -78,7 +78,7 @@ mvn clean javafx:run
 
 ```
 mvn clean install
-mvn javafx:run
+mvn clean javafx:run
 ```
 
 ---
