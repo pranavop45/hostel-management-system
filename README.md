@@ -6,7 +6,7 @@
 
 ## 🚀 Overview
 
-PRANAV Hostel Management System is a modern JavaFX-based desktop application designed to manage hostel operations efficiently.
+Hostel Management System is a modern JavaFX-based desktop application designed to manage hostel operations efficiently.
 
 This version is **fully functional without any database**, using local storage to simulate real-time operations like Add, Update, Delete, and Fees management.
 
