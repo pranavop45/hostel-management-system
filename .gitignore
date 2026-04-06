@@ -1,1 +1,46 @@
+# Maven build
 /target/
+/out/
+
+# Compiled files
+*.class
+*.jar
+*.war
+*.ear
+
+# Logs
+*.log
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+nbproject/private/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.cache
+
+# Maven wrapper (optional ignore)
+.mvn/wrapper/maven-wrapper.jar
+
+# JavaFX / build leftovers
+hs_err_pid*
+replay_pid*
+
+# Generated sources
+generated-sources/
+maven-status/
+
+# Test output
+test-output/
+
+# Keep important config
+!pom.xml
+!README.md
+!LICENSE
+!NOTICE
