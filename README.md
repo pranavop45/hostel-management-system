@@ -1,4 +1,4 @@
-# 🏠 PRANAV HOSTEL MANAGEMENT SYSTEM
+# 🏠HOSTEL MANAGEMENT SYSTEM
 
 ### JavaFX Desktop Application (No Database Required)
 
